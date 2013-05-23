@@ -45,7 +45,7 @@ body{
 	/*background-color:#408DD2;*/
 }
 header{
-	height:200px;
+	height:150px;
 }
 
 header #logo{
@@ -75,6 +75,13 @@ header #menu li.selected,header #menu li:hover{
 	color:white;
 	cursor:pointer;
 }
+#container{
+	overflow:hidden;
+	width:960px;
+	height:500px;
+	display:block;
+	overflow:hidden;
+}
 #windows{
 	list-style-type:none;
 	margin:0px;
@@ -82,23 +89,86 @@ header #menu li.selected,header #menu li:hover{
 }
 
 #windows li{
+	width:960px;
+	height:500px;
+	margin-bottom:5px;
+	list-style:none;
+	position:absolute;
+	float:left;
 	display:inline-block;
+}
+
+#windows li:not(.visible){
+	display:none;
+
+}
+
+#windows canvas{
 	width:960px;
 	height:500px;
 }
 
- 
+#windows h1{
+	font-size:250%;
+	font-family:Lobster;
+}
+#windows p{
+	text-align:left;
+	font-family:verdana;
+	width:950px;
+	padding:5px;
+	height:400px;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:block;
+	background-color:white;
+	border-radius:5px;
+}
 #FooterTwo,#FooterTree{
 	margin-left:auto;
+	font-family: 'Quicksand', sans-serif;
 	text-align:right;
 }
 
+#floater{
+	z-index:10;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image:url('http://www.wannabegirl.org/translucent/ccf.gif');
+	opacity:50;
+}
+#messageBox{
+	width:400px;
+	margin:auto;
+	margin-top:400px;
+	padding:5px;
+	background-color:white;	
+}
 
+#messageBox h1{
+	font-family:Lobster;
+}
+				
+#valider{
+	width:100px;
+	height:25px;
+	text-align:center;
+	margin:auto;
+	background-color:white;
+	border:solid 1px #03ccff;
+	padding:5px;
+	border-radius:3px;
+	font-family:Quicksand;
+}
 
-
-
-
-
+ #valider:hover{
+ 	background-color:#03ccff;
+	color:white;
+	cursor:pointer;
+}
 
 
 /* ==========================================================================

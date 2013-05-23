@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -32,8 +33,13 @@
 		</header>
 		<div id="container">
 		<ul id="windows">
-			<li></li>
-			<li><h1>About</h1></li>
+			<li class="visible" style="background-color:black;"><canvas id="canvas">
+</canvas></li>
+			<li><h1>About</h1><br/>
+				<p>HTML 5 Game Made for the course Web2.0 (Master IFI 2013).
+<br/>Developped by <a href="emailto:teffaha@polytech.unice.fr">TEFFAHA Mortadha<a/><br/><br/><br/>
+The project source is available on github and is available through this link :<br/> <a href="https://github.com/mteffaha/SpaceShooter.git"><img src="http://railsgirls.com/images/github-logo.png" alt="github" /></a>
+</p></li>
 		</ul>
 		</div>
 		<footer>
@@ -42,18 +48,26 @@
 		   <div id="FooterTree"> Développé par  <a href="mailto:teffaha@polytech.unice.fr">TEFFAHA Mortadha</a>   </div> 
 		   </div>
 		</footer>
+		
+		<div id="floater">
+			<div id="messageBox">
+				<div>
+					<h1>Veuillez Tapez un pseudo:</h1>
+					<input type="text" name="pseudo" value=""/>
+					<a href="#" id="valider" >Valider</a>
+				</div>
+			</div>
+		</div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+        <script src="js/vendor/jquery-1.9.1.min.js"><\/script>
         </script>
+
+	<script src="/socket.io/socket.io.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/gameEngine.js"></script>
+        <script src="js/main.js"></script>
+        
+
+       i
     </body>
 </html>
